@@ -5,13 +5,23 @@
 </head>
 
 <html>
+
     <body>
         <section id="game-section" class="animar">
-            <h2>
-                Juego de tres en raya
-            </h2>
+            
+            <header id="header">
+                <div class="player player-active" id="xPlayerDisplay">
+                    X
+                </div>
 
-            <br>
+                <h2>
+                    Juego de tres en raya
+                </h2>
+
+                <div class="player" id="oPlayerDisplay">
+                    O
+                </div>
+            </header>
 
             <div id="cellContainer">
                 <button cell-index="0" class="cell" ></button>
@@ -28,8 +38,6 @@
             <br>
 
             <p id="statusText"></p>
-
-            <br>
 
             <button id="restartBtn">Reiniciar</button>
 

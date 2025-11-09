@@ -1,26 +1,92 @@
+body {
+  background-color: #0A0519;
+}
+
 /* ======== TRES EN RAYA ======== */
 .cell {
-  box-sizing: border-box;
-  width: 125px;
-  height: 125px;
-  border: 2px solid #000000;
-  box-shadow: 0 0 0 2px;
-  line-height: 5px;
-  font-size: 100px;
-  background: linear-gradient(135deg, rgba(255,105,180,0.95), rgba(135,206,235,0.95));
-  cursor: pointer; 
+    background: #17122A;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none !important;
+    width: 125px;
+    height: 125px;
+    line-height: 5px;
+    font-size: 80px;
+    font-weight: bold;
+    cursor: pointer; 
 }
-
+.cell:hover {
+    background-color:#2A2343;
+}
 #game-section {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Popins", sans-serif;
+  align-items: center;
   text-align: center;
+  user-select: none;
 }
-
 #cellContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 0;
+  gap: 12px;
   margin: 0 auto;
   justify-content: center; 
 }
 
+#header {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+    margin: 0 auto 50px; 
+    align-items: center; 
+}
+#header .player {
+    background: #17122A;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: solid 4px #17122A;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+#header .player:hover {
+    border: solid 4px #2A2343;
+}
+#header .player-active {
+    opacity: 1;
+    border: solid 4px #2A2343;
+}
+#header #xPlayerDisplay {
+    color: #1892EA;
+}
+#header #oPlayerDisplay {
+    color: #a737ff;
+}
+
+#restartBtn {
+    margin-top: 30px;
+    width: 400px;
+    color: #ffffff;
+    background-color: #17122A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+#restartBtn:hover {
+    background-color:#2A2343;
+}
+
+h2, p {
+    color: #ffffff;
+    font-weight: bold;
+}
