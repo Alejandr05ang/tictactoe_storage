@@ -29,15 +29,15 @@
             </header>
 
             <div id="cellContainer">
-                <button cell-index="0" class="cell" ></button>
-                <button cell-index="1" class="cell" ></button>
-                <button cell-index="2" class="cell" ></button>
-                <button cell-index="3" class="cell" ></button>
-                <button cell-index="4" class="cell" ></button>
-                <button cell-index="5" class="cell" ></button>
-                <button cell-index="6" class="cell" ></button>
-                <button cell-index="7" class="cell" ></button>
-                <button cell-index="8" class="cell" ></button>
+                <button data-cell-index="0" class="cell"></button>
+                <button data-cell-index="1" class="cell"></button>
+                <button data-cell-index="2" class="cell"></button>
+                <button data-cell-index="3" class="cell"></button>
+                <button data-cell-index="4" class="cell"></button>
+                <button data-cell-index="5" class="cell"></button>
+                <button data-cell-index="6" class="cell"></button>
+                <button data-cell-index="7" class="cell"></button>
+                <button data-cell-index="8" class="cell"></button>
             </div>
 
             <br>
@@ -49,9 +49,7 @@
                 <div id="timer">00:00</div>
                 <button id="rematchBtn">Revancha</button>
                 <button id="newGameBtn">Nuevo juego</button>
-                <a href="historial.html">
-                    <button id="historialBtn">Historial</button>
-                </a>
+                <button id="historialBtn" onclick="window.location.href='historial.html'">Historial</button>
             </div>
 
             <div id="avatarModal" class="modal">
@@ -64,10 +62,7 @@
 
         </section>
 
-    </body>
-
-    <footer>
         <script src="js/storage.js"></script>
         <script src="js/game.js"></script>
-    </footer>
+    </body>
 </html>

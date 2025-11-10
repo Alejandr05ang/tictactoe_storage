@@ -71,7 +71,7 @@ function initializeGame(){
 }
 
 function cellClicked(){
-    const cellIndex = this.getAttribute("cell-index");
+    const cellIndex = this.getAttribute("data-cell-index");
 
     if(options[cellIndex] !== "" || !running){
         return;
@@ -329,5 +329,5 @@ function registrarPartida(resultado) {
     };
 
     gameStorage.registerGame(partidaData);
-    console.log('✅ Partida guardada:', partidaData);
+    console.log('Partida guardada:', partidaData);
 }
